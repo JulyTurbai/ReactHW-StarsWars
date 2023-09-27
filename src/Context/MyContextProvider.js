@@ -5,7 +5,8 @@ const MyContext = createContext()
 
 const MyContextProvider = ({ children }) => {
     const [ people, setPeople ] = useState([]);
-    
+
+
     useEffect(() => {
         fetch('https://swapi.dev/api/people')
           .then((response) => response.json())

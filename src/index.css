@@ -9,25 +9,57 @@ body {
   background-position: center;
   background-size: cover;
   color: white;
+  font-family: fantasy;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(231, 225, 34);
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  color: rgb(231, 225, 34);
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.line {
+  border-color: rgb(231, 225, 34);
+  margin-bottom: 30px;
+}
+
+img {
+  width: 85%;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .people {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .persone {
-  width: 200px;
-  height: 300px;
-  border: 2px solid white;
+  width: 220px;
+  height: 350px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  color:rgb(224, 217, 115)
 }
+.persone__img {
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.persone__name {
+  color:rgb(219, 207, 36);
+  font-size: 18px;
+ }
