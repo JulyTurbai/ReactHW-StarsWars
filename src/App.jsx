@@ -1,12 +1,16 @@
 import './App.css';
 import People from './components/People';
+import { MyContextProvider } from './Context/MyContextProvider'
 
 function App() {
   
   return (
     <div className="container">
         <h1>Stars Wars</h1>
-        <People/>
+        <MyContextProvider>
+          <People/>
+        </MyContextProvider>
+       
     </div>
   );
 }

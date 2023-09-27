@@ -2,13 +2,15 @@ import React from 'react';
 import { useContext } from 'react';
 import { MyContext } from '../Context/MyContextProvider';
 
+
 const Persone = () => {
     const people = useContext(MyContext);
+    console.log(people)
 
     return (
         <>
             {
-            people.map((item) =>  
+           people.map((item) =>  
                 (<div className="persone" key={ item.index }>
                     <div className="persone__img">
                         <img src="" alt="" />
