@@ -1,9 +1,8 @@
-import React from 'react';
-
 const ModalWindow = () => {
+    
     return (
         <div className="descr none" onClick={() => 
-            document.querySelector('.descr').classList.add('none')}>
+            document.querySelector('.info').classList.add('none')}>
         </div> 
     );
 };

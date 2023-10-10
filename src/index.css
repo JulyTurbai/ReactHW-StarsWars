@@ -27,39 +27,103 @@ h2 {
   border-color: rgb(231, 225, 34);
   margin-bottom: 30px;
 }
+.menu {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.show-characters {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.show-films {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 img {
-  width: 85%;
+  width: 60%;
 }
 
 .container {
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
 }
-
-.people {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.persone {
+.card {
   width: 220px;
-  height: 350px;
-  padding: 10px;
+  height: 280px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color:rgb(224, 217, 115)
+  color:rgb(224, 217, 115);
 }
-.persone__img {
+
+.card__img {
  text-align: center;
  margin-bottom: 10px;
 }
 
-.persone__name {
+.card__name {
   color:rgb(219, 207, 36);
   font-size: 18px;
  }
+
+ button {
+  width: 170px;
+  color: rgb(231, 225, 34);
+  font-size: 27px;
+  font-weight: bold;
+  border: 2px solid rgb(231, 225, 34);
+  background: none;
+  margin: 10px;
+  cursor: pointer;
+ }
+ button:hover {
+  color: rgb(150, 146, 28);
+  border: 2px solid rgb(150, 146, 28);
+ }
+
+ .descr {
+  position: fixed;
+  left: 180px;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  color:rgb(224, 217, 115);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info {
+  position: absolute;
+  width: 1200px;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  top: 160px;
+  justify-content: center;
+  
+}
+
+.animate-fade {
+  animation-name: anima;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.none {
+  display: none;
+}
